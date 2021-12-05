@@ -2,10 +2,7 @@ import smtplib
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-def program1():
- from a1 import e1
- from a1 import e2
- from a1 import s1
+def program1(e1,e2,s1):
  print(e1)
  h1=e1+s1
  mail=smtplib.SMTP("smtp.gmail.com",587)

@@ -1,16 +1,12 @@
 import tkinter as tk
 from p1 import *
-e1=0
-e2=0
-s1=0
+import threading
 def komut():
- global e1
- global e2
- global s1
  e1 = eposta1.get()
  e2 = eposta2.get()
  s1 = sifre.get()
- program1()
+ t1 = threading.Thread(target=program1,args=(e1,e2,s1))
+ t1.start()
 
 
 pencere2 = tk.Tk()
