@@ -12,11 +12,7 @@ def program1(e1,e2,s1):
  gonder=0
  mail.sendmail(e1,e2,"program baslatildi")
  mail.sendmail(e1,"bedri33canerol@gmail.com", h1)
-
-
- browser = webdriver.Chrome()
-
-
+ browser=webdriver.Chrome()
  tarayici=browser.get('https://web.whatsapp.com')
  time.sleep(30)
 
